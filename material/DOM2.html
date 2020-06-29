@@ -1,0 +1,80 @@
+<!-- 用vs code emmet的話，要加入bulma cdn -->
+<!-- 或者直接copy bulma start template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <!-- https://bulma.io/documentation/form/general/#complete-form-example -->
+    <!-- 到bulma複製以下程式碼 -->
+    <!-- start
+        <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+            <input class="input" type="text" placeholder="e.g Alex Smith">
+        </div>
+        </div>
+
+        <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+            <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+        </div>
+        </div>        
+     end -->
+</head>
+<body>
+    <!-- 複製一段官方文件hero -->
+    <section class="hero is-primary">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Hero title
+            </h1>
+            <h2 class="subtitle">
+              Hero subtitle
+            </h2>
+          </div>
+        </div>
+      </section>
+    <!-- 自己寫container , form , submit button -->
+    <div class="container">
+        <form action="/my-api" id='user' method="post">
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="e.g Alex Smith">
+                </div>
+            </div>
+        
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+                </div>
+            </div>  
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                    <button class="button is-link is-light">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- 複製官方文件footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+        </div>
+    </footer>
+    <script src="./document2.js"></script>
+</body>
+</html>
