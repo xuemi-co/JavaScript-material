@@ -38,6 +38,11 @@ console.log(delete a)
 console.log(delete b)
 console.log(window.a,window.b)
 
+// 逗號運算子
+// var ab = bb = 10 // 不要，會創造出bb這個在window的全域變數
+// var aa , bb = 10 // 安全
+let aa , bb = 10 // 更安全
+
 
 
 
