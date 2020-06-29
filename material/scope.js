@@ -33,3 +33,17 @@ for(var someC=0;someC<6;someC++){
     console.log('迴圈內的someC:' + someC)
 }
 console.log('for loop 使用 var 宣告的someC (block scope) 執行過後的global scope',someA,someB,someC)
+
+// scope 作業
+var aHandsomeGuy = 'ken'
+if(true){
+    var aHandsomeGuy = 'you'
+    console.log(aHandsomeGuy) // aHandsomeGuy是誰？
+}
+console.log(aHandsomeGuy) // aHandsomeGuy是誰？
+var aPrettyGirl = 'Ketty'
+if(true){
+    let aPrettyGirl = 'you'
+    console.log(aPrettyGirl)  // aPrettyGirl是誰？
+}
+console.log(aPrettyGirl)  // aPrettyGirl是誰？
