@@ -56,6 +56,7 @@ console.log(value)
 
 
 // 你說const得值為什麼可以被改變？
+// 這裡跳回投影片
 // 因為除了原始型別的值
 // （數字、布林、字串、null、undefined、Symbol、bigInt)
 // 之外的值，對於JavaScript而言，都是物件
