@@ -81,6 +81,32 @@
 // 買菜()
 
 
+// 沒有參數預設值 callback 的執行觀念
+
+// function 買菜(cb){
+//     console.log('買菜中')
+//     setTimeout(function(){
+//         console.log('買菜完成')
+//         cb()
+//     }, Math.random()*1000);
+// }
+// function 洗菜(cb){
+//     console.log('洗菜中')
+//     setTimeout(function(){
+//         console.log('洗菜完成')
+//         cb()
+//     }, Math.random()*1000);
+// }
+// function 切菜(cb){
+//     console.log('切菜中')
+//     setTimeout(function(){
+//         console.log('切菜完成')
+//         cb()
+//     }, Math.random()*1000);
+// }
+// 買菜(function(){洗菜(function(){切菜()})})
+
+
 
 // function 買菜(cb=洗菜){
 //     console.log('買菜中')
